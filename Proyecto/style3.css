@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.carrusel-fondo-container {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.carrusel-fondo {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.carrusel-img {
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover;
+}
+.carrusel-fondo-container::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.45); 
+    z-index: 2;
+    pointer-events: none;
+}
+.cards-superpuestos {
+    position: relative;
+    z-index: 3; 
+}
+.cards-superpuestos {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align-last: left;
+}
+
+.card {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.btn-outline-success.position-absolute {
+    z-index: 10;
+}

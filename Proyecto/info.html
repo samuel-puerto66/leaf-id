@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style3.css">
+  <title>Leaf-ID</title>
+</head>
+
+<body>
+  <!-- Botón volver al index -->
+  <a href="index.html" class="btn btn-outline-success position-absolute m-3" style="top: 0; left: 0; z-index: 10;">
+    &larr;
+  </a>
+
+  <!-- Carrusel -->
+  <div class="carrusel-fondo-container">
+    <div id="carouselFondo" class="carousel slide carrusel-fondo" data-bs-ride="carousel">
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+          <img src="img/leafid5.jpg" class="d-block w-100 h-100 carrusel-img" alt="Fondo 1">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="img/leafid6.jpg" class="d-block w-100 h-100 carrusel-img" alt="Fondo 2">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="img/leafid7.jpg" class="d-block w-100 h-100 carrusel-img" alt="Fondo 3">
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards  -->
+
+  <div class="cards-superpuestos">
+  <div class="container-fluid h-100 d-flex align-items-center">
+    <div class="row w-100 justify-content-center">
+           <div class="col-12 d-flex justify-content-center mb-4">
+  <img src="img/leafidlogo.png" alt="LeafID Logo" style="max-width: 300px; width: 100%;">
+</div>
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/1305447687/es/foto/cuidando-de-mis-plantas.jpg?s=612x612&w=0&k=20&c=FQjndUcKiVzJNjm4T2xjrsbHFd4NdlpUQLYYUKrOqYk=" class="card-img-top" alt="Planta 1">
+      <div class="card-body">
+        <p class="card-text">El creciente interés por cuidar plantas en casa enfrenta un gran reto: muchas
+          personas no saben identificar correctamente las especies ni cómo cuidarlas bien, y las búsquedas en
+          internet a menudo dan mala información. Esto provoca que las plantas sufran a pesar del esfuerzo.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3 d-flex flex-column align-items-center">
+    <div class="card">
+      <img src="https://www.semana.com/resizer/v2/LUCN56WJYFBVJGBFJN2ETRXCAI.jpg?auth=9de71d622827da7e358137663726f0cb4af50cbb55d65c3ab6b90eb070d4104a&smart=true&quality=75&width=768&fitfill=false" class="card-img-top" alt="Planta 2">
+      <div class="card-body">
+        <p class="card-text">Una solución clave es una herramienta práctica y accesible que identifique
+          automáticamente las plantas con la cámara y brinde cuidados personalizados, facilitando el aprendizaje
+          y el mantenimiento.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/1369509157/es/foto/mujer-afroamericana-regando-plantas-en-tienda-de-bot%C3%A1nica.jpg?s=612x612&w=0&k=20&c=KAg7mJjJkBI3pQl82-sfdSSOy51hytaXOtEYXvy9lng=" class="card-img-top" alt="Planta 3">
+      <div class="card-body">
+        <p class="card-text">La inteligencia artificial puede hacer esto posible, combinando reconocimiento
+          de imágenes con una interfaz simple. Así, se promueve el amor por la naturaleza, prácticas
+          sostenibles y la innovación tecnológica al servicio del bienestar personal y ambiental.</p>
+      </div>
+    </div>
+  </div>
+</div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        var fondoCarousel = document.querySelector('#carouselFondo');
+        var carouselFondo = new bootstrap.Carousel(fondoCarousel, {
+          interval: 3000,
+          ride: 'carousel'
+        });
+      </script>
+      <a href="analisis.html" class="btn btn-success">ANALISIS</a>
+</body>
+
+</html>
